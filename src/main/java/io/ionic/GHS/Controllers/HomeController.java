@@ -21,10 +21,14 @@ public class HomeController {
     public String Error2 = "Success";
 
     @GetMapping("/")
-    public String search(Model model) {
+    public String search() {
         return "search";
     }
 
+    @GetMapping("/form_search")
+    public String form_search() {
+        return "search";
+    }
     @PostMapping("/form_search")
     public String handleForm(@RequestParam("username") String username, Model model) throws IOException, InterruptedException {
 
