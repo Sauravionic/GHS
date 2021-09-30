@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+    --white: #fefefd;
+    --lightYellow: #dceb65;
+    --midYellow: #95a333;
+    --fadedYellow: #b1bd4c;
+    --brownYellow: #807b56;
+    --brown: #5a5447;
+    --purple: #230e26;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+}
+body {
+    position:relative;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    /* background-color: #030101;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23030101' width='11' height='11'/%3E%3Crect fill='%23090404' x='10' width='11' height='11'/%3E%3Crect fill='%230e0707' y='10' width='11' height='11'/%3E%3Crect fill='%23120a0a' x='20' width='11' height='11'/%3E%3Crect fill='%23160c0c' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23190f0f' y='20' width='11' height='11'/%3E%3Crect fill='%231c1111' x='30' width='11' height='11'/%3E%3Crect fill='%231f1313' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23211415' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23241616' y='30' width='11' height='11'/%3E%3Crect fill='%23271718' x='40' width='11' height='11'/%3E%3Crect fill='%232b191a' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%232e1a1b' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23311c1d' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23341d1f' y='40' width='11' height='11'/%3E%3Crect fill='%23371f20' x='50' width='11' height='11'/%3E%3Crect fill='%233a2022' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%233e2224' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23412325' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23442527' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23482629' y='50' width='11' height='11'/%3E%3Crect fill='%234b272a' x='60' width='11' height='11'/%3E%3Crect fill='%234e292c' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23522b2e' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23552c30' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23592e32' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%235c2f33' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23603135' x='70' width='11' height='11'/%3E%3Crect fill='%23633237' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23673439' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%236a353b' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%236e373d' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%2371383f' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23753a41' x='80' width='11' height='11'/%3E%3Crect fill='%23793b43' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%237c3d44' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23803f46' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23844048' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%2387424a' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%238b434c' x='90' width='11' height='11'/%3E%3Crect fill='%238f454e' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23934750' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23964852' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%239a4a55' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%239e4b57' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23a24d59' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23a64f5b' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23a9505d' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23ad525f' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23b15361' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23b55563' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23b95765' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23bd5868' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23c15a6a' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23c55c6c' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23c95d6e' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23cd5f70' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23d16173' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23d56275' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23D96477' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover; */
+    font-family: 'Stick No Bills',sans-serif;
+    color: white;
+}
+h1,p {
+    margin: 0;
+}
+span {
+    color:#d96477;
+}
+.container {
+    position: absolute;
+    top: 8%;
+    left: 9.5%;
+    width: 80%;
+    background-color: #040406;
+    border-radius: 14px;
+    padding-bottom: 4%;
+}
+.mid {
+    margin-top: 35px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-basis: 50%;  */
+    /* color: var(--white); */
+    /* background-color: var(--white); */
+}
+.left h1 {
+    font-size: 90px;
+}
+.left p {
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+.right {
+    flex-basis: 50%;
+}
+
+.form_group {
+    margin-top: 30px;
+}
+.inside_form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+    position: relative;
+}
+#username {
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 45px;
+    border: none;
+    padding: 0 20px 0 20px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #d96477;
+    letter-spacing: 1px;
+    outline: none;
+}
+#username::placeholder {
+
+}
+
+.btn {
+    position: absolute;
+    min-width: 25%;
+    top: 0px;
+    right: -0.5px;
+    height: 50px;
+    border: none;
+    border-radius: 35px;
+    background-color: #d96477;
+    font-family: inherit;
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #f6a435;
+}
+
+.card {
+    width:65%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #d96477;
+    padding-top: 7px;
+    padding-bottom: 25px;
+}
+
+.card .avatar-img {
+    border-radius: 40px;
+    margin-top: 10px;
+    border: 10px solid;
+    width: 80px;
+    height: 80px;
+}
+.card .bio {
+    letter-spacing: 1px;
+    padding: 0 23px 0 23px;
+}
+.card .name {
+    margin: 8px 0 8px 0;
+    color: var(--white);
+    text-decoration: none;
+}
+.card .name:hover {
+    color: #f6a435;
+}
+
+.details {
+    display: flex;
+    padding: 11px 7% 0 7%;
+    justify-content: space-between;
+    color: #040406;
+    position: relative;
+}
+
+.firsthr{ 
+    position: absolute;
+    border: none;
+    border-left: 1px solid white;
+    height: 49%;
+    width: 1px;
+    top: 50%;
+    left: 30.8%;
+}
+.secondhr{ 
+    position: absolute;
+    border: none;
+    border-left: 1px solid white;
+    height: 49%;
+    width: 1px;
+    top: 50%;
+    left: 64.8%;
+}
+
+.details p {
+    color: var(--white);
+    margin-top: 10px;
+    font-size: 21px;
+}
+.details p:hover {
+    color: #f6a435;
+    cursor: pointer;
+}
+
+
+@media only screen
+and (min-device-width : 200px)
+and (max-device-width : 700px) {
+    .container {
+        position:unset;
+        margin: auto;
+        min-height: 88.5%;
+        width: 94%;
+        height: unset;
+        padding-bottom: 20px;
+        margin-top: -7%;
+    }
+    .left h1 {
+        font-size: 56px;
+        margin-top: 15px;
+    }
+    .left p {
+        margin-top: 5px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .inside_form {
+        width: 85%;
+    }
+    .btn {
+        min-width: 28%;
+    }
+    .card {
+        /* display:none; */
+        width: 90%;
+    }
+    .details {
+        flex-direction: column;
+    }
+    .details hr {
+        display: none;
+    }
+    .followers {
+        margin-top: 12px;
+    }
+    .followers p, .following p, .repo p {
+        margin-top: 2px;
+        margin-bottom: 12px;
+    }
+}

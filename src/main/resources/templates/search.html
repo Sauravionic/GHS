@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Search</title>
+    <link rel="stylesheet" th:href="@{/css/search_style.css}" />
+</head>
+<body>
+<div class="container">
+    <section class="mid">
+        <div class="left">
+            <h1><span>Git</span>Hub Search</h1>
+            <p>
+                Search for any username on github <br />
+                <span>and</span><br />
+                leave the rest to us !!
+            </p>
+            <div class="form_group">
+                <form class="forms" name="form_search" action="form_search" method="POST">
+                    <div class="inside_form">
+                        <input
+                                type="text"
+                                name="username"
+                                id="username"
+                                placeholder="Username"
+                        />
+                        <button type="submit" id="btn" class="btn">Go</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <div class="card">
+                <img
+                        class="avatar-img"
+                        id="avatar-img"
+                        th:src = "${avatarURL}"
+                        onError="this.onerror=null;this.src='https://img.icons8.com/material-outlined/48/000000/github.png';"
+                />
+                <a
+                        class="name"
+                        id="namelink"
+                        th:href= "${'https://github.com/' + username}"
+                        target="_blank"
+                ><h2 id="namehead" class="name" th:text="${name}">Saurav Srivastava</h2></a
+                >
+                <p class="bio" id="bio" th:text="${bio}">
+                    3 Star CodeChef Coder, 3rd Year Cloud Computing undergrad at DIT
+                    UNIVERSITY, Dehradun
+                </p>
+                <div class="details">
+                    <div class="followers">
+                        <h1>Followers</h1>
+                        <p id="followers" th:text="${followers}">30</p>
+                    </div>
+                    <hr class="firsthr" />
+                    <div class="following">
+                        <h1>Following</h1>
+                        <p id="following" th:text="${following}">3</p>
+                    </div>
+                    <hr class="secondhr" />
+                    <div class="repo">
+                        <h1>Repositories</h1>
+                        <p id="repo" th:text="${repo}">30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer"></section>
+</div>
+</body>
+</html>
